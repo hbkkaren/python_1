@@ -183,6 +183,7 @@ print(count)
 sentence = input('type your sentence:')
 word = input()
 a = sentence.split(' ')
+count = 0
 for i in range(0, len(a)):
     if word == a[i]:
         count += 1
@@ -295,3 +296,8 @@ mid_pos = len(temp) // 2
 res = temp[:mid_pos] + [mid_str] + temp[mid_pos:]
 res = ' '.join(res)
 print('formated: ', res)
+
+# Q  What are negative indexes and why are they used?
+
+# Negative indices are powers(also called exponents) with a minus sign in front of them.used to in Python to begin slicing from the end of the string i.e. the last.
+
