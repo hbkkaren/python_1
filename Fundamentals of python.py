@@ -184,12 +184,12 @@ sentence = input('type your sentence:')
 word = input()
 a = sentence.split(' ')
 count = 0
-for i in range(0, len(a)):
+for i in range(0,len(a)):
     if word == a[i]:
         count += 1
     else:
-        count = 1
-print('word comes ', count, 'times')
+        pass
+print(count)
 
 # 17 Write a Python program to get a single string from two given strings,  separated by a space and swap the first two characters of each string.
 
@@ -284,18 +284,18 @@ addto(a)
 
 # 21 Write a Python function to insert a string in the middle of a string.
 
-test_str = 'car is for race'
+# test_str = 'car is for race'
 
-print('the original sring ' + str(test_str))
+# print('the original sring ' + str(test_str))
 
-mid_str = 'good'
+# mid_str = 'good'
 
-temp = test_str.split()
-mid_pos = len(temp) // 2
+# temp = test_str.split()
+# mid_pos = len(temp) // 2
 
-res = temp[:mid_pos] + [mid_str] + temp[mid_pos:]
-res = ' '.join(res)
-print('formated: ', res)
+# res = temp[:mid_pos] + [mid_str] + temp[mid_pos:]
+# res = ' '.join(res)
+# print('formated: ', res)
 
 # Q  What are negative indexes and why are they used?
 
