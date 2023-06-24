@@ -42,7 +42,7 @@
 # large_small_sum(list1)
 
 # 5 How will you compare two lists?
-
+# The Python cmp() function compares the two Python objects and returns the integer values -1, 0, 1 according to the comparison.
 
 # 6  Write a Python program to count the number of strings where the string
 # length is 2 or more and the first and last character are same from a given  list of strings.
@@ -398,7 +398,11 @@
 
 # 44 Write a Python program to find the highest 3 values in a dictionary
 
-
+# dict = {'maths': 25 , 'guj' : 32,'science': 56 ,'english':46}
+# a = list(dict.values())
+#
+# b = a.sort(reverse=True)
+# print('this are the highest 3 values in a dictionary : ',a[:3])
 
 
 
@@ -559,6 +563,7 @@
 # 60 Write a Python program to find the maximum and minimum numbers
 # from the specified decimal numbers.
 
-# dec = input("").split(",")
-# print("Maximum: ", max(dec))
-# print("Minimum: ", min(dec))
+# from decimal import *
+# data = list(map(Decimal, '2.45 2.69 2.45 3.45 2.00 0.04 7.25'.split()))
+# print("Maximum: ", max(data))
+# print("Minimum: ", min(data))
