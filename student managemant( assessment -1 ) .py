@@ -1,5 +1,4 @@
 
-import logging
 # Emety dict (to store the data and perform crud opretion on it) ............................................
 
 data_dict = {}
@@ -84,55 +83,33 @@ while True:
     
     elif id==2:
             while True:
-           
+                
                 print("1.Add marks to the student \n2.View all student")
-
                 choice2 = int(input("Enter your faculty choice : "))
 
-                if choice2== 2:
-                    print("\n")
-                    serial = int(input('enter serial no :'))
-                    print("\n")
-                    if serial in data_dict:
-                        faculty=input("enter your name(faculty) :")
-                        print("\n")
-                        serial= input('please write serial no. of student: ')
-                        print("\n")
-                        per = input("faculty want to perform any other opreation :")
-            
-                        if per=='y':
-                            continue
-                        else:
-                            break
-                    else:
-                        print('please enter valid serial no.')
-                        break
-                        while True:
-                            if faculty in serial:
-                                if choice2 ==1:
-                                    serial = input("Enter serial no of student")
-                                    subject =input("Enter subject 1 name you want to add marks :")
-                                    subject2 =input("Enter subject 2 name you want to add marks :")
-                                    marks = input("Enter subject 1 marks : ")
-                                    marks2= input("Enter subject 2 marks : ")
-                                    print("\n\n")
-                                    data_dict = {serial:{"fname":fname,"lname":lname,"contect":contect,"subject":{}}}    
-                                    data_dict[serial]["subject"] ={subject:{"marks1":marks,"fees1":fees},subject2: {"marks":marks2,"fees":fees2}}
-                                    print(data_dict)
-                                    print("\n\n")
-                                    exit= input("Do you want to do another opreation (y/n)")
-                                    
-                                    if exit =='n':
-                                        break
-                                
-                        else:
-                            logging.warning("Sorry your serial no is wrong \nplease type again")        
-                        
-                elif choice2 ==2:
+                if choice2== 1:
+                    serial = input("Enter serial no of student")
+                    
 
+                    subject =input("Enter subject 1 name you want to add marks :")
+                    subject2 =input("Enter subject 2 name you want to add marks :")
+                    marks = input("Enter subject 1 marks : ")
+                    marks2= input("Enter subject 2 marks : ")
+                    print("\n\n")
+                    data_dict = {serial:{"fname":fname,"lname":lname,"contect":contect,"subject":{}}}    
+                    data_dict[serial]["subject"] ={subject:{"marks1":marks,"fees1":fees},subject2: {"marks":marks2,"fees":fees2}}
                     print(data_dict)
-    
-    
+                    print("\n\n")
+                    exit= input("Do you want to do another opreation (y/n)")
+                    
+                    if exit =='n':
+                        break
+                
+                    else:
+                        continue 
+                elif choice2==2:
+                    print(data_dict) 
+                        
     elif id ==3:
         while True:
             serial =int(input("Enter your serial no :"))
@@ -143,6 +120,8 @@ while True:
                     continue
                 else:
                     break
+            else:
+                break    
     
     elif id==4:
         print("\n\n")
@@ -150,7 +129,6 @@ while True:
 
         if  exit=='y':
           print("\n\n")
-          logging.info('thank you for using our app ....')
           break
 
 
