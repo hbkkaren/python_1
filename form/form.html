@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="" name="frm">
+        <table cellpadding="5px" cellspacing="5px">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fname" onblur="checkfname();"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lname"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" onblur="checkEmail();"></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="number" name="Mobile"></td>
+            </tr>
+            <tr>
+                <td>address</td>
+                <td><textarea rows="5" cols="21" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male">male
+                    <input type="radio" name="gender" value="female">femail
+                    <input type="radio" name="gender" value="other">other
+                </td>
+            </tr>
+            <tr>
+                <td>hobby</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="music">music<br>
+                    <input type="checkbox" name="hobby" value="reading">reading<br>
+                    <input type="checkbox" name="hobby" value="traveling">traveling<br>
+                    <input type="checkbox" name="hobby" value="sports">sports
+
+                </td>
+            </tr>
+            <tr>
+                <td>Birth Date</td>
+                <td><input type="date" name="bdate"></td>
+            </tr>
+            <tr>
+                <td>Birth time</td>
+                <td><input type="time" name="btime"></td>
+            </tr>
+            <tr>
+                <td>salary rannge</td>
+                <td><input type="range" name="range"></td>
+            </tr>
+            <tr>
+                <td>Education</td>
+                <td>
+                    <select name="Education">
+                        <option>---select Education---</option>
+                        <option value="10th">10th</option>
+                        <option value="10th">12th</option>
+                        <option value="10th">BCA</option>
+                        <option value="10th">BE</option>
+                        <option value="10th">bac it</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Resume</td>
+                <td><input type="file" name="Resume"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>confirm password</td>
+                <td><input type="password" name="cpassword"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="action" value="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
