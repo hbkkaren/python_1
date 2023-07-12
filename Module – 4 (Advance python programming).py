@@ -154,5 +154,109 @@ with open('first.txt','r') as firstfile, open('second.txt','w') as secondfile:
 #  They're not equal,  so you get the 1-tuple False, for a result.
 
 
+# 17 How Do You Handle Exceptions With Try/Except/Finally In Python? Explain with coding snippets. 
+
+# An Exception is an Event, which occurs during the execution of the program. It is also known as a run time error. When that error occurs, Python generates an exception during the execution and that can be handled, 
+# which avoids your program to interrupt.
+
+def divide(x, y):
+    try:
+        # Floor Division : Gives only Fractional
+        # Part as Answer
+        result = x // y
+        print("Yeah ! Your answer is :", result)
+    except ZeroDivisionError:
+        print("Sorry ! You are dividing by zero ")
+   
+# Look at parameters and note the working of Program
+divide(3, 2)
+divide(3, 0)
+
+# 18 Write python program that user to enter only odd numbers, else will 
+# raise an exception.
+
+# 19 What are oops concepts?
+# As the name suggests, Object-Oriented Programming or OOPs refers to languages that use objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, 
+# polymorphism, etc in programming. The main aim of OOP is to bind together the data and 
+# the functions that operate on them so that no other part of the code can access this data except that function.
+
+# OOPs Concepts:
+# Class
+# Objects
+# Data Abstraction
+# Encapsulation
+# Inheritance
+# Polymorphism
+
+# 20 How to Define a Class in Python? What Is Self? Give An Example Of A Python Class
+
+# defing the class name office with x property
+
+class office:
+	x =" employee"
+
+# self:  
+#	The self parameter is a reference to thecurrent instance of the class, and is used to access variables that belongs to the class. 
+
+# 21 Write a Python class named Rectangle constructed by a length and width and a method which will compute the area of a rectangle 
+
+class Rentangle:
+    def area(self,length,width):
+        self.length = length
+        self.width = width
+        area = width * length
+        print(area)
+
+length = int(input("write your length :"))
+width = int(input("write youe width : "))
+
+b1 = Rentangle()
+b1.area(length,width)
+
+# 22 Write a Python class named Circle constructed by a radius and two methods which will compute the area and the perimeter of a circle 
+
+class Circle:
+    def area(self,radius):
+        self.radius = radius
+        area = 2* 3.14* (radius*radius)
+        print(area)
+    def perimeter(self,radius):
+        perimeter = 2*3.14*radius
+        print(perimeter)
+
+
+radius = int(input("write your  Circle radius : "))
+a = Circle()
+
+a.area(radius)
+a.perimeter(radius)
+
+
+# 23 Explain Inheritance in Python with an example? What is init? Or What Is A Constructor In Python?
+# Like any other OOP languages, Python also supports the concept of class inheritance.Inheritance allows us to create a new class from an existing class.
+# The new class that is created is known as subclass (child or derived class) and the existing class from which the child class is derived is known as superclass
+#  (parent or base class).
+
+# ex:
+
+class Person:
+ 
+    # init method or constructor
+    def __init__(self, name):
+        self.name = name
+ 
+    # Sample Method
+    def say_hi(self):
+        print('Hello, my name is', self.name)
+ 
+ 
+p = Person('Nikhil')
+p.say_hi()
+# The constructor is a method that is called when an object is created. This method is defined in the class and can be used to initialize basic variables. 
+# If you create four objects, the class constructor is called four times. Every class has a constructor, but its not required to explicitly define it.
+
+# 24 What is Instantiation in terms of OOP terminology? 
+# Instantiate (a verb) and instantiation (the noun) in computer science refer to the creation of an object
+# (or an “instance” of a given class) in an object-oriented programming (OOP) language.
 
 
